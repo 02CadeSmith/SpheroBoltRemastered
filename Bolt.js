@@ -13,4 +13,17 @@ async function startProgram() {
 
 	await speak("Start", true); 
 
-	await scrollMatrixText('Start!', { r: 66, g: 56, b: 255 }, 30, true)
+	await scrollMatrixText('Start!', { r: 66, g: 56, b: 255 }, 30, true) 
+
+	//Blue LED Commit
+	
+
+	await roll((getHeading() + 0), 60, 2.5);  
+	
+	await scrollMatrixText('Blue!', { r: 0, g: 0, b: 255 }, 30, true)
+
+	await delay (1);
+	
+	await setMainLed({ r: 0, g: 0, b: 255 }); 
+	
+	await delay (1);
