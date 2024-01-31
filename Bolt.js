@@ -83,4 +83,22 @@ await roll((getHeading() + -90), 60, .6)
 	
 	setMainLed({ r: 0, g:255 , b:0  }); 
 
+	//Purple LED Commit
+
+	await roll((getHeading() + -91), 60, 1.1) 
+	
+	await delay (1);
+	
+	await roll((getHeading() + -40), 60, 1.2)
+
+	setMainLed({ r: 255, g:0 , b:255 });
+	
+	await delay (1);
+	
+	await Sound.Animal.Monkey.play(true); 
+
+	await scrollMatrixText('Purple!', { r: 255, g: 0, b: 255 }, 30, true) 
+	
+	await delay (1);
+
 	
