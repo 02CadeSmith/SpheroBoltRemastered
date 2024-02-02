@@ -111,3 +111,5 @@ await roll((getHeading() + -90), 60, .6)
 	await scrollMatrixText('Finish!', { r: 255, g: 255, b: 255 }, 30, true) 
 	
 	await speak("Finish", true); 
+
+}
